@@ -1,34 +1,36 @@
-.images{
-
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.image-container{
-  position:relative;
-
-  width: 400px;
-  height:300px;
-  display:inline-flex;
+.image-container {
+  position: relative;
   overflow: hidden;
+  aspect-ratio: 1.78;
+  display: flex;
 }
 
-.image-container img{
-  flex:1;
+.image-container img {
+  flex: 1;
   object-fit: cover;
 }
 
-.image-container img:hover{
+.image-container:hover img {
   cursor: pointer;
-  filter:brightness(0.5);
+  filter: brightness(0.5);
   transition: filter 0.4s;
 }
 
+.image-container .image-title {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 20px);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  visibility: hidden;
+}
 
-
-.image-container .image-title{
-  position:absolute;
-  top:50%;
-  left:calc(50% - 20px);
-  background-color: rgba(0,0,0,0.6);
-  color:white;
-  padding:5px;
+.image-container:hover .image-title {
+  visibility: visible;
 }
