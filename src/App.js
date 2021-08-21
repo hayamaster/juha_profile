@@ -1,7 +1,7 @@
-import React from 'react';
-import logo from './images/logo.jpg';
-import Image from './Image';
-import './App.css';
+import React from "react";
+import logo from "./images/logo.jpg";
+import Image from "./Image";
+import "./App.css";
 
 class App extends React.Component {
   render() {
@@ -9,11 +9,11 @@ class App extends React.Component {
       <div>
         <header className="header">
           <img className="logo" src={logo} alt="logo" />
-          <h1>Welcome! JUHA's travel blog!</h1>
+          <h1>Welcome! JUHA's travelog!</h1>
         </header>
         <Image />
       </div>
-    )
+    );
   }
 }
 
