@@ -1,6 +1,7 @@
 .images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 5px 15px;
 }
 
 .image-container {
@@ -8,11 +9,18 @@
   overflow: hidden;
   aspect-ratio: 1.78;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-container img {
-  flex: 1;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
   object-fit: cover;
+  
 }
 
 .image-container:hover img {
@@ -22,15 +30,18 @@
 }
 
 .image-container .image-title {
-  position: absolute;
-  top: 50%;
-  left: calc(50% - 20px);
-  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 5px;
   visibility: hidden;
+  font-size: 35px;
+  flex:1;
+  z-index: 1;
+  text-align: center;
 }
 
 .image-container:hover .image-title {
   visibility: visible;
+}
+a{
+  text-decoration: none;
 }

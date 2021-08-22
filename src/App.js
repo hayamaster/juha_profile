@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./images/logo.jpg";
-import Image from "./Image";
+import Image from "./components/Image";
 import "./App.css";
 
 class App extends React.Component {
@@ -11,6 +11,9 @@ class App extends React.Component {
           <img className="logo" src={logo} alt="logo" />
           <h1>Welcome! JUHA's travelog!</h1>
         </header>
+        <div className="menu">
+
+        </div>
         <Image />
       </div>
     );
