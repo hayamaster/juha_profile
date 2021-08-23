@@ -1,23 +1,18 @@
-import React from "react";
-import logo from "./images/logo.jpg";
-import Image from "./components/Image";
-import "./App.css";
+import React from 'react';
+import './App.css';
+import { HashRouter, Route } from 'react-router-dom';
+import Japan from './routes/Japan';
+import Home from './routes/Home';
+import Menu from './components/Menu';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <header className="header">
-          <img className="logo" src={logo} alt="logo" />
-          <h1>Welcome! JUHA's travelog!</h1>
-        </header>
-        <div className="menu">
-
-        </div>
-        <Image />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <HashRouter>
+      <Menu />
+      <Route path='/' exact={true} component={Home} />
+      <Route path="/japan" component={Japan} />
+    </HashRouter>
+  );
 }
 
 export default App;

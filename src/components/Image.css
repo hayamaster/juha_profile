@@ -1,7 +1,10 @@
 .images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 5px 15px;
+  margin-top: 5px;
+  
+  margin-left:50px;
+  margin-right:50px;
 }
 
 .image-container {

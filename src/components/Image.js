@@ -51,7 +51,7 @@ function Image() {
     <div className="images">
       {images.map(image => {
         return (
-          <a href={image.link}>
+          <a href={image.link} target='_blank'>
             <div className="image-container">
               <img src={image.src} alt={image.title} />
               <div className="image-title">{image.title}</div>
