@@ -1,22 +1,10 @@
-.navbar{
-  background-color: #060b26;
-  height: 80px;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
-.menubar{
-  margin-left: 2rem;
-  font-size: 2rem;
-  background-color:none;
-}
-
 .nav-menu{
   background-color: #060b26;
-  width: 250px;
+  width: 200px;
   top:0;
   left:0;
+  height:100vh;
+  position: fixed;
 }
 
 
@@ -47,6 +35,7 @@
 
 .nav-menu-items{
   width:100%;
+  padding:0;
 }
 
 .navbar-toggle{

@@ -14,7 +14,7 @@ function App() {
         <div className='style'>
           <Switch>
             <Route path='/' exact={true}>{Home}</Route>
-            <Route path="/japan">{Japan}</Route>
+            <Route className='japan' path="/japan">{Japan}</Route>
             <Route path='/about'>{About}</Route>
           </Switch>
         </div>
