@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/logo.jpg";
-import Image from "../components/Image";
+import ImageHome from "../components/ImageHome";
 import "./Home.css";
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
         <img className="logo" src={logo} alt="logo" />
         <h1>Welcome! JUHA's travelog!</h1>
       </header>
-      <Image />
+      <ImageHome />
     </div>
   );
 }
